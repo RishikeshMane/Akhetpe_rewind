@@ -5,19 +5,6 @@ import './Wallet.css';
 const Wallet: React.FC = () => {
   return (
     <IonPage>
-      {/* <IonHeader>
-        <IonToolbar>
-          <IonTitle>Wallet</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Wallet</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Wallet page" />
-      </IonContent> */}
     </IonPage>
   );
 };

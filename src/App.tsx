@@ -15,6 +15,8 @@ import Setting from './pages/Setting';
 import Friends from './pages/Friends';
 import Wallet from './pages/Wallet';
 import Volume from './pages/Volume';
+import Bingo from './pages/bingo';
+import Tambola from './pages/tambola'
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 /* Core CSS required for Ionic components to work properly */
@@ -59,6 +61,12 @@ const App: React.FC = () => (
           <Route exact path="/">
             <Redirect to="/home" />
           </Route>
+          <Route exact path="/Bingo">
+            <Bingo />
+          </Route>
+          <Route exact path="/Tambola">
+            <Tambola />
+          </Route>
         </IonRouterOutlet>
         <IonTabBar className="icon-tab-bar" slot="bottom">
           <IonTabButton className="icon-tab-button" tab="setting" href="/setting">
@@ -74,6 +82,12 @@ const App: React.FC = () => (
             <IonIcon className="ion-icon" icon={walletOutline} />
           </IonTabButton>
           <IonTabButton className="icon-tab-button" tab="volume" href="/volume">
+            <IonIcon className="ion-icon" icon={headsetOutline} />
+          </IonTabButton>
+          <IonTabButton className="icon-tab-button" tab="Bingo" href="/Bingo">
+            <IonIcon className="ion-icon" icon={headsetOutline} />
+          </IonTabButton>
+          <IonTabButton className="icon-tab-button" tab="Tambola" href="/Tambola">
             <IonIcon className="ion-icon" icon={headsetOutline} />
           </IonTabButton>
         </IonTabBar>
